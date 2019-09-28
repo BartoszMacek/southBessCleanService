@@ -1,3 +1,16 @@
-<p>
-  navbar works!
-</p>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-default">
+      <ul class="nav navbar-default">
+        <li routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">
+          <a routerLink="/home">Home</a></li>
+        <li routerLinkActive="active"><a routerLink="/about-us">About Us</a></li>
+        <li routerLinkActive="active"><a routerLink="/services">Services</a></li>
+        <li routerLinkActive="active"><a routerLink="/gallery">Gallery</a></li>
+        <li routerLinkActive="active"><a routerLink="/testimonials">Testimonials</a></li>
+        <li routerLinkActive="active"><a routerLink="/contact-us">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
