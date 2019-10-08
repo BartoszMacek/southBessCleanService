@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-contact-us',
@@ -7,9 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactUsComponent implements OnInit {
 
-  constructor() { }
+  contactForm: ContactUsViewModel = {
+    name: '',
+    email: '',
+    telephoneNumber: '',
+    postCode: '',
+    query: ''
+  };
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
+}
+
+
+export interface ContactUsViewModel {
+  name: string;
+  email: string;
+  telephoneNumber: string;
+  postCode: string;
+  query: string;
 }
