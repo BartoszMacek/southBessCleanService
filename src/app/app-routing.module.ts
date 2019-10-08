@@ -9,7 +9,7 @@ import {ContactUsComponent} from './contact-us/contact-us.component';
 import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
-  {path: ' ', component: AppComponent},
+  {path: '', component: HomeComponent},
   {path: 'about-us', component: AboutUsComponent},
   {path: 'services', component: ServicesComponent},
   {path: 'gallery', component: GalleryComponent},
