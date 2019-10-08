@@ -1,3 +1,22 @@
-<p>
-  gallery works!
-</p>
+<button class="btn btn-lg btn-info" [class.active]="filterBy=='all'" (click)="filterBy='all'">All</button>
+<button class="btn btn-lg btn-info" [class.active]="filterBy=='kitchen'" (click)="filterBy='kitchen'">Kitchen</button>
+<button class="btn btn-lg btn-info" [class.active]="filterBy=='bathroom'" (click)="filterBy='bathroom'">Bathroom
+</button>
+<button class="btn btn-lg btn-info" [class.active]="filterBy=='living-room'" (click)="filterBy='living-room'">Living
+  room
+</button>
+<button class="btn btn-lg btn-info" [class.active]="filterBy=='car'" (click)="filterBy='car'">Car</button>
+
+<div class="row">
+  <ul id="thumbnailsList">
+    <li *ngFor="let image of (visibleImages | imageFilterByCat:filterBy) ">
+      <a [routerLink]="['/gallery', image.name]">
+        <img src="{{image.url}}" class="tn" width="200" height="160">
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+<!--<button class="btn btn-lg btn-info" [class.active]="filterBy=='after'" (click)="filterBy='after'">After Cleaning</button>-->
+<!--<button class="btn btn-lg btn-info" [class.active]="filterBy=='before'" (click)="filterBy='before'">Before Cleaning</button>-->
