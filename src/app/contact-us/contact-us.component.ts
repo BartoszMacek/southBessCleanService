@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {AppService} from '../app.service';
 
 @Component({
   selector: 'app-contact-us',
@@ -6,6 +7,8 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./contact-us.component.scss']
 })
 export class ContactUsComponent implements OnInit {
+
+  recaptchaChecker = false;
 
   contactForm: ContactUsViewModel = {
     name: '',
@@ -15,12 +18,28 @@ export class ContactUsComponent implements OnInit {
     query: ''
   };
 
-  constructor() {
+  constructor(private appService: AppService) {
   }
 
   ngOnInit() {
   }
 
+  sendForm() {
+    this.appService.postContactForm(this.contactForm).subscribe(
+      res => {
+
+      },
+      err => {
+        alert('Something wen\'t wrong \(o_O\)');
+      }
+    );
+    location.reload();
+  }
+
+  resolved(captchaResponse: string) {
+    this.recaptchaChecker = true;
+    console.log(`Resolved captcha with response: ${captchaResponse}`);
+  }
 }
 
 

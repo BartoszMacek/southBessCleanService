@@ -17,6 +17,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {ImageDetailComponent} from './gallery/image-detail/image-detail.component';
 import {AppService} from './app.service';
 import {ImageFilterByCatPipe} from './filter.pipe';
+import {RecaptchaModule} from 'ng-recaptcha';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import {ImageFilterByCatPipe} from './filter.pipe';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RecaptchaModule.forRoot()
   ],
   providers: [AppService, ImageFilterByCatPipe],
   bootstrap: [AppComponent]
