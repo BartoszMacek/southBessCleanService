@@ -21,3 +21,6 @@ $(function() {
     }
   });
 });
+
+window.onload = function() {
+  baguetteBox.run('.gallery__list')};
