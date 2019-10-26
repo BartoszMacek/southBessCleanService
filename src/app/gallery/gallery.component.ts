@@ -11,9 +11,11 @@ export class GalleryComponent implements OnChanges {
   @Input() filterBy = 'all';
   visibleImages: any[] = [];
 
+
   constructor(private  appService: AppService) {
     this.visibleImages = this.appService.getImages();
   }
+
 
   ngOnChanges() {
     this.visibleImages = this.appService.getImages();
