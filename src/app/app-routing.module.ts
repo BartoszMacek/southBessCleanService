@@ -10,13 +10,13 @@ import {ImageDetailComponent} from './gallery/image-detail/image-detail.componen
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'about-us', component: AboutUsComponent},
   {path: 'services', component: ServicesComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'gallery/:name', component: ImageDetailComponent},
   {path: 'testimonials', component: TestimonialsComponent},
-  {path: 'contact-us', component: ContactUsComponent},
-  {path: 'home', component: HomeComponent}
+  {path: 'contact-us', component: ContactUsComponent}
 ];
 
 @NgModule({
