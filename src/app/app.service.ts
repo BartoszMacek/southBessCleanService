@@ -34,23 +34,32 @@ export class AppService {
 }
 
 const IMAGES = [
+  {name: 'bathroom-before', category: 'bathroom', status: 'Before cleaning', url: 'assets/images/bathroom-before.jpg'},
+  {name: 'bathroom-after', category: 'bathroom', status: 'After cleaning', url: 'assets/images/bathroom-after.jpg'},
+
   {name: 'bathroom1-before', category: 'bathroom', status: 'Before cleaning', url: 'assets/images/bathroom1-before.jpg'},
   {name: 'bathroom1-after', category: 'bathroom', status: 'After cleaning', url: 'assets/images/bathroom1-after.jpg'},
 
   {name: 'bathroom2-before', category: 'bathroom', status: 'Before cleaning', url: 'assets/images/bathroom2-before.jpg'},
   {name: 'bathroom2-after', category: 'bathroom', status: 'After cleaning', url: 'assets/images/bathroom2-after.jpg'},
 
-  {name: 'bathroom-before', category: 'bathroom', status: 'Before cleaning', url: 'assets/images/bathroom-before.jpg'},
-  {name: 'bathroom-after', category: 'bathroom', status: 'After cleaning', url: 'assets/images/bathroom-after.jpg'},
+  {name: 'bathroom3-before', category: 'bathroom', status: 'Before cleaning', url: 'assets/images/bathroom3-before.jpg'},
+  {name: 'bathroom3-after', category: 'bathroom', status: 'After cleaning', url: 'assets/images/bathroom3-after.jpg'},
+
+  {name: 'bathroom4-before', category: 'bathroom', status: 'Before cleaning', url: 'assets/images/bathroom4-before.jpg'},
+  {name: 'bathroom4-after', category: 'bathroom', status: 'After cleaning', url: 'assets/images/bathroom4-after.jpg'},
+
+  {name: 'bathroom5-before', category: 'bathroom', status: 'Before cleaning', url: 'assets/images/bathroom5-before.jpeg'},
+  {name: 'bathroom5-after', category: 'bathroom', status: 'After cleaning', url: 'assets/images/bathroom5-after.jpeg'},
+
+  {name: 'bathroom6-before', category: 'bathroom', status: 'Before cleaning', url: 'assets/images/bathroom6-before.jpg'},
+  {name: 'bathroom6-after', category: 'bathroom', status: 'After cleaning', url: 'assets/images/bathroom6-after.jpg'},
+
+  {name: 'bathroom7-before', category: 'bathroom', status: 'Before cleaning', url: 'assets/images/bathroom7-before.jpg'},
+  {name: 'bathroom7-after', category: 'bathroom', status: 'After cleaning', url: 'assets/images/bathroom7-after.jpg'},
 
   {name: 'kitchen-before', category: 'kitchen', status: 'Before cleaning', url: 'assets/images/kitchen-before.jpg'},
   {name: 'kitchen-after', category: 'kitchen', status: 'After cleaning', url: 'assets/images/kitchen-after.jpg'},
-
-  {name: 'living-room-before', category: 'living-room', status: 'Before cleaning', url: 'assets/images/living-room-before.jpg'},
-  {name: 'living-room-after', category: 'living-room', status: 'After cleaning', url: 'assets/images/living-room-after.jpg'},
-
-  {name: 'living-room1-before', category: 'living-room', status: 'Before cleaning', url: 'assets/images/living-room1-before.jpeg'},
-  {name: 'living-room1-after', category: 'living-room', status: 'After cleaning', url: 'assets/images/living-room1-after.jpeg'},
 
   {name: 'kitchen1-before', category: 'kitchen', status: 'Before cleaning', url: 'assets/images/kitchen1-before.jpg'},
   {name: 'kitchen1-after', category: 'kitchen', status: 'After cleaning', url: 'assets/images/kitchen1-after.jpg'},
@@ -58,18 +67,40 @@ const IMAGES = [
   {name: 'kitchen2-before', category: 'kitchen', status: 'Before cleaning', url: 'assets/images/kitchen2-before.jpeg'},
   {name: 'kitchen2-after', category: 'kitchen', status: 'After cleaning', url: 'assets/images/kitchen2-after.jpeg'},
 
-  {name: 'bathroom5-before', category: 'bathroom', status: 'Before cleaning', url: 'assets/images/bathroom5-before.jpeg'},
-  {name: 'bathroom5-after', category: 'bathroom', status: 'After cleaning', url: 'assets/images/bathroom5-after.jpeg'},
+  {name: 'kitchen3-before', category: 'kitchen', status: 'Before cleaning', url: 'assets/images/kitchen3-before.jpg'},
+  {name: 'kitchen3-after', category: 'kitchen', status: 'After cleaning', url: 'assets/images/kitchen3-after.jpg'},
 
-  {name: 'bathroom4-before', category: 'bathroom', status: 'Before cleaning', url: 'assets/images/bathroom4-before.jpg'},
-  {name: 'bathroom4-after', category: 'bathroom', status: 'After cleaning', url: 'assets/images/bathroom4-after.jpg'},
+  {name: 'kitchen4-before', category: 'kitchen', status: 'Before cleaning', url: 'assets/images/kitchen4-before.jpg'},
+  {name: 'kitchen4-after', category: 'kitchen', status: 'After cleaning', url: 'assets/images/kitchen4-after.jpg'},
 
-  {name: 'bathroom3-before', category: 'bathroom', status: 'Before cleaning', url: 'assets/images/bathroom3-before.jpg'},
-  {name: 'bathroom3-after', category: 'bathroom', status: 'After cleaning', url: 'assets/images/bathroom3-after.jpg'},
+  {name: 'kitchen5-before', category: 'kitchen', status: 'Before cleaning', url: 'assets/images/kitchen5-before.jpeg'},
+  {name: 'kitchen5-after', category: 'kitchen', status: 'After cleaning', url: 'assets/images/kitchen5-after.jpeg'},
+
+  {name: 'kitchen6-before', category: 'kitchen', status: 'Before cleaning', url: 'assets/images/kitchen6-before.jpg'},
+  {name: 'kitchen6-after', category: 'kitchen', status: 'After cleaning', url: 'assets/images/kitchen6-after.jpg'},
+
+  {name: 'kitchen7-before', category: 'kitchen', status: 'Before cleaning', url: 'assets/images/kitchen7-before.jpg'},
+  {name: 'kitchen7-after', category: 'kitchen', status: 'After cleaning', url: 'assets/images/kitchen7-after.jpg'},
+
+  {name: 'living-room-before', category: 'living-room', status: 'Before cleaning', url: 'assets/images/living-room-before.jpg'},
+  {name: 'living-room-after', category: 'living-room', status: 'After cleaning', url: 'assets/images/living-room-after.jpg'},
+
+  {name: 'living-room1-before', category: 'living-room', status: 'Before cleaning', url: 'assets/images/living-room1-before.jpeg'},
+  {name: 'living-room1-after', category: 'living-room', status: 'After cleaning', url: 'assets/images/living-room1-after.jpeg'},
+
+  {name: 'living-room2-before', category: 'living-room', status: 'Before cleaning', url: 'assets/images/living-room2-before.jpeg'},
+  {name: 'living-room2-after', category: 'living-room', status: 'After cleaning', url: 'assets/images/living-room2-after.jpeg'},
 
   {name: 'car-before', category: 'car', status: 'Before cleaning', url: 'assets/images/car-before.jpeg'},
   {name: 'car-after', category: 'car', status: 'After cleaning', url: 'assets/images/car-after.jpeg'},
 
   {name: 'car1-before', category: 'car', status: 'Before cleaning', url: 'assets/images/car1-before.jpeg'},
   {name: 'car1-after', category: 'car', status: 'After cleaning', url: 'assets/images/car1-after.jpeg'},
+
+  {name: 'car2-before', category: 'car', status: 'Before cleaning', url: 'assets/images/car2-before.jpeg'},
+  {name: 'car2-after', category: 'car', status: 'After cleaning', url: 'assets/images/car2-after.jpg'},
+
+  {name: 'car3-before', category: 'car', status: 'Before cleaning', url: 'assets/images/car3-before.jpeg'},
+  {name: 'car3-after', category: 'car', status: 'After cleaning', url: 'assets/images/car3-after.jpg'},
+
 ];
