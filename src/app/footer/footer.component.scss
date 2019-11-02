@@ -1,3 +1,5 @@
+@import "src/styles";
+
 ul {
   list-style: none;
   padding-left: 0px;
@@ -11,6 +13,9 @@ z-index: 100;
 background: #222;
 word-break: break-all;
 word-wrap: break-word;
+a:hover{
+  text-decoration: none;
+}
 }
 
 .single_ftr form{
@@ -21,7 +26,7 @@ margin-bottom: 10px;
 }
 
 .sf_title{
-  color: #33d286;
+  color: $yellow;
   text-transform: uppercase;
   font-size: 17px;
 margin-top: 0px;
@@ -84,7 +89,7 @@ transition: .5s;
 .newsletter_form button:hover,
 .newsletter_form button:hover{
 background: transparent;
-color: #33d286;
+color: $yellow;
 opacity: .9;
 }
 .newsletter_form ::-webkit-input-placeholder {
@@ -108,9 +113,7 @@ opacity: .9;
   color: #fff;
   opacity: 1
 }
-.form-control{
 
-}
 .form-control:focus{
 border-color: #33d286;
 }
@@ -123,7 +126,7 @@ border-color: #33d286;
   color: #fff;
 }
 .single_ftr a:hover {
-  color: #33d286;
+  color: $yellow;
 }
 
 .ftr_social_icon li {
@@ -146,8 +149,8 @@ padding: 4px;
 transition: .5s;
 }
 .ftr_social_icon ul li a:hover{
-background: #33d286;
-border-color: #33d286;
+background: $yellow;
+border-color: $yellow;
 color: #fff;
 }
 

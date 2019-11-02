@@ -1,3 +1,5 @@
+@import "src/styles";
+
 .about{
   margin-top: 10em;
 }
@@ -24,7 +26,7 @@
     position: relative;
 }
  .card .card-block a{
-	color: #007b5e !important;
+	color: $blue;
 	font-weight:700;
 	text-decoration:none;
 }
@@ -41,7 +43,7 @@
 	font-family: FontAwesome;
     position: absolute;
     font-size: 39px;
-    color: #007b5e;
+    color: $blue;
     left: 0;
 	-webkit-transition: -webkit-transform .2s ease-in-out;
     transition:transform .2s ease-in-out;

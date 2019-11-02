@@ -1,3 +1,5 @@
+@import "src/styles";
+
 .invalid-input {
   color: darkred;
   font-weight: bold;
@@ -46,7 +48,7 @@ sub {
 
 .feature-left .feature-icon {
   font-size: 50px;
-  color: #4cbec5;
+  color: $blue;
   display: inline-block;
   padding-right: 40px;
   padding-top: 7px;
@@ -250,23 +252,23 @@ select option {
 
 
 .btn-default {
-  background-color: #ce0058;
+  background-color: $blue;
   color: #fff;
-  border: 2px solid #ce0058;
+  border: 2px solid $blue;
 }
 
 .btn-default:hover {
   background-color: transparent;
-  color: #ce0058;
-  border: 2px solid #ce0058;
+  color: $blue;
+  border: 2px solid $blue;
 }
 
 .btn-default.focus,
 .btn-default:focus {
   background-color: transparent;
-  color: #ce0058;
-  border: 2px solid #ce0058;
-  box-shadow: 0 0 0 0.2rem rgb(206, 0, 88);
+  color: $blue;
+  border: 2px solid $blue;
+  box-shadow: 0 0 0 0.2rem $blue;
 }
 
 .space-medium{

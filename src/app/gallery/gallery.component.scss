@@ -1,5 +1,7 @@
+@import "src/styles";
+
 .gallery{
-  margin-top: 10em;
+  margin-top: 8em;
 }
 
 ul {
@@ -13,7 +15,7 @@ li {
 
 
 .tn {
-  margin: 6px;
+  margin: 15px;
   border: 4px solid #eee;
   box-shadow: #555 1px 1px 1px 1px;
 }
@@ -48,15 +50,23 @@ li {
 
  .btn-outlined.btn-theme {
   background: none;
-  color: #4284df;
-border-color: #4284df;
+  color: $blue;
+border-color: $blue;
 }
 
 .btn-outlined.btn-theme:hover,
 .btn-outlined.btn-theme:active {
   color: #FFF;
-  background:#4284df;
-  border-color: #4284df;
+  background:$blue;
+  border-color: $blue;
 }
 
-
+.img-thumbnail{
+  padding: .25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  max-width: 100%;
+  height: 265px;
+  width: 350px;
+}
