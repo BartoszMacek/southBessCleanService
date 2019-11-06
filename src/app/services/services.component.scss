@@ -1,5 +1,5 @@
 
-.page-header {
+.services {
   background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../../assets/images/other_bg.png) no-repeat center;
   background-size: cover;
   margin: 0;
@@ -7,8 +7,13 @@
   padding-bottom: 35px;
 }
 
+.box{
+  height: 500px;
+  margin-top: 4rem;
+}
+
 .page-caption {
-  padding: 120px 0px;
+  margin-top: 8rem;
   position: relative;
   z-index: 1;
   color: #fff;
@@ -19,6 +24,18 @@
 
 }
 
+.card-body{
+  padding: 0 30px 20px 30px;
+}
+
+.border-caption {
+  border: 5px solid white;
+  background: rgba(0, 0, 0, 0.0);
+  width: 50%;
+  padding-top: 8px;
+}
+
+
 .page-title {
   color: #fff;
   text-transform: uppercase;
@@ -28,13 +45,19 @@
 }
 
 ul li {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.text-light{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .pricing-divider {
-  border-radius: 20px;
+  border-radius: 30px;
   background: #C64545;
-  padding: 1em 0 4em;
+  padding: 2em 0 4em;
   position: relative;
 }
 
@@ -63,7 +86,7 @@ ul li {
   bottom: -2px;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 60px;
 }
 
 .deco-layer {
@@ -174,10 +197,10 @@ ul li {
   border-color: #1AA85C;
 }
 
-.brd {
-  border: 5px solid white;
-  background: rgba(0, 0, 0, 0.0);
-  width: 50%;
-  padding-top: 8px;
+.mb-6{
+  margin-bottom: 6.7rem;
 }
 
+.mb-r{
+  margin-bottom: 4.3rem;
+}
