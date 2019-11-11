@@ -18,6 +18,7 @@ import {ImageDetailComponent} from './gallery/image-detail/image-detail.componen
 import {AppService} from './app.service';
 import {ImageFilterByCatPipe} from './filter.pipe';
 import {RecaptchaModule} from 'ng-recaptcha';
+import {ServiceItemComponent} from './services/service-item/service-item.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {RecaptchaModule} from 'ng-recaptcha';
     HomeComponent,
     ImageDetailComponent,
     ImageFilterByCatPipe,
+    ServiceItemComponent,
 
   ],
   imports: [

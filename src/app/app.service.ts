@@ -82,6 +82,12 @@ const IMAGES = [
   {name: 'kitchen7-before', category: 'kitchen', status: 'Before cleaning', url: 'assets/images/kitchen7-before.jpg'},
   {name: 'kitchen7-after', category: 'kitchen', status: 'After cleaning', url: 'assets/images/kitchen7-after.jpg'},
 
+  {name: 'kitchen8-before', category: 'kitchen', status: 'Before cleaning', url: 'assets/images/kitchen8-before.jpg'},
+  {name: 'kitchen8-after', category: 'kitchen', status: 'After cleaning', url: 'assets/images/kitchen8-after.jpg'},
+
+  {name: 'kitchen9-before', category: 'kitchen', status: 'Before cleaning', url: 'assets/images/kitchen9-before.jpg'},
+  {name: 'kitchen9-after', category: 'kitchen', status: 'After cleaning', url: 'assets/images/kitchen9-after.jpg'},
+
   {name: 'living-room-before', category: 'living-room', status: 'Before cleaning', url: 'assets/images/living-room-before.jpg'},
   {name: 'living-room-after', category: 'living-room', status: 'After cleaning', url: 'assets/images/living-room-after.jpg'},
 
@@ -90,6 +96,12 @@ const IMAGES = [
 
   {name: 'living-room2-before', category: 'living-room', status: 'Before cleaning', url: 'assets/images/living-room2-before.jpeg'},
   {name: 'living-room2-after', category: 'living-room', status: 'After cleaning', url: 'assets/images/living-room2-after.jpeg'},
+
+  {name: 'living-room3-before', category: 'living-room', status: 'Before cleaning', url: 'assets/images/living-room3-before.jpg'},
+  {name: 'living-room3-after', category: 'living-room', status: 'After cleaning', url: 'assets/images/living-room3-after.jpg'},
+
+  {name: 'living-room4-before', category: 'living-room', status: 'Before cleaning', url: 'assets/images/living-room4-before.jpg'},
+  {name: 'living-room4-after', category: 'living-room', status: 'After cleaning', url: 'assets/images/living-room4-after.jpg'},
 
   {name: 'car-before', category: 'car', status: 'Before cleaning', url: 'assets/images/car-before.jpeg'},
   {name: 'car-after', category: 'car', status: 'After cleaning', url: 'assets/images/car-after.jpeg'},
@@ -102,5 +114,14 @@ const IMAGES = [
 
   {name: 'car3-before', category: 'car', status: 'Before cleaning', url: 'assets/images/car3-before.jpeg'},
   {name: 'car3-after', category: 'car', status: 'After cleaning', url: 'assets/images/car3-after.jpg'},
+
+  {name: 'car4-before', category: 'car', status: 'Before cleaning', url: 'assets/images/car4-before.jpg'},
+  {name: 'car4-after', category: 'car', status: 'After cleaning', url: 'assets/images/car4-after.jpg'},
+
+  {name: 'car5-before', category: 'car', status: 'Before cleaning', url: 'assets/images/car5-before.jpg'},
+  {name: 'car5-after', category: 'car', status: 'After cleaning', url: 'assets/images/car5-after.jpg'},
+
+  {name: 'car6-before', category: 'car', status: 'Before cleaning', url: 'assets/images/car6-before.jpg'},
+  {name: 'car6-after', category: 'car', status: 'After cleaning', url: 'assets/images/car6-after.jpg'},
 
 ];
