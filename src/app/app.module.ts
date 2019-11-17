@@ -1,5 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -40,7 +41,8 @@ import {RecaptchaModule} from 'ng-recaptcha';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    RecaptchaModule.forRoot()
+    NgbModule.forRoot(),
+    RecaptchaModule.forRoot(),
   ],
   providers: [AppService, ImageFilterByCatPipe],
   bootstrap: [AppComponent]

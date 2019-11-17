@@ -4,13 +4,11 @@
       <img src="assets/images/logo.png" class="brand">
       <span>South Clean Service</span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-            aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation">
+    <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end text-uppercase" id="collapsibleNavId">
-      <ul class="navbar-nav">
+  </button>
+    <div class="collapse navbar-collapse no-transition justify-content-end text-uppercase" [attr.aria-expanded]="!isCollapsed" [ngClass]="{collapse: isCollapsed}" id="collapsibleNavId">
+      <ul class="navbar-nav" (click)="isCollapsed = !isCollapsed">
         <li routerLinkActive="active"
             [routerLinkActiveOptions]="{exact: true}" class="nav-item">
           <a routerLink="/home" class="nav-link">Home</a>

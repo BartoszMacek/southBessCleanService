@@ -57,6 +57,17 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  @include mobile-tablet {
+    font-size: 2.4em;
+    top: 65%;
+    transform: translateY(-50%);
+  }
+  // @include mobile {
+  //   font-size: 2.4em;
+  // }
+  // @include sm-tablet {
+  //   font-size: 2.4em;
+  // }
   p {
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -124,17 +135,6 @@ a.btn.btn-default.btn-scroll {
   border-radius: 100%;
 }
 
-@media screen and (max-width: 520px) {
-  ::placeholder {
-    font-size: 10px;
-  }
-  .scroll-down {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 45px;
-  }
-}
 
 //SERVICE SECTION
 
@@ -146,7 +146,7 @@ a.btn.btn-default.btn-scroll {
 
 .service__header {
   text-align: center;
-}
+  }
 
 .service__header-text {
   font-size: 2.6em;
@@ -278,7 +278,25 @@ h2 {
   background-color: #f1f4fa;
   padding-top: 1rem;
   padding-bottom: 3rem;
-  height: 500px;
+  height: 435px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+    @include sm-mobile {
+      height: 640px;
+    }
+    @include mobile {
+      height: 530px;
+    }
+    @include sm-tablet {
+      height: 500px;
+    }
+    @include tablet {
+      height: 480px;
+    }
+    @include sm-desktop {
+      height: 480px;
+    }
 }
 
 .testimonials__img {
@@ -302,8 +320,14 @@ h2 {
 }
 
 .testimonials__text {
-  margin: 1rem 12rem 1.5rem 12rem;
+   margin: 1rem 5rem 1rem 5rem;
   text-align: justify;
+  // @include for-phone-only {
+  //   margin: 10px;
+  // }
+  // @include for-tablet-landscape-up {
+  //   margin: 1rem 4rem 1.5rem 4rem;
+  // }
 }
 
 .yellow {
@@ -414,3 +438,35 @@ border-color: #4284df;
   filter: invert(100%);
 }
 
+.row-reverse{
+  @include sm-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @include sm-tablet {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
+
+.double-img{
+  display: inline-flex;
+  @include sm-mobile{
+    display: block;
+  }
+  @include tablet{
+    display: block;
+  }
+  @include sm-desktop{
+    display: block;
+  }
+}
