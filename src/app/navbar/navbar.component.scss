@@ -35,3 +35,9 @@
 .nav-item{
   font-size: 16px;
 }
+
+.navbar-brand{
+  @include mobile-tablet{
+  font-size: 16px
+  }
+}
