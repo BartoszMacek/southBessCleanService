@@ -37,7 +37,16 @@
 }
 
 .navbar-brand{
-  @include mobile-tablet{
-  font-size: 16px
+  @include sm-mobile{
+  font-size: 12px
+  }
+  @include mobile{
+    font-size: 16px
+  }
+  @include sm-tablet{
+    font-size: 16px
+  }
+  @include tablet{
+    font-size: 16px
   }
 }
