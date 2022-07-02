@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+//VARIABLES
+$black: #211915;
+$yellow:	#f4de42;
+$beige: #fefae5;
+$blue: #4284df;
+$baseFontSize: 16px;
+
+html{
+  font-size: $baseFontSize;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+  }
+
+  //MIXINS MEDIA QUERIES
+  @mixin sm-mobile {
+    @media only screen and (min-width : 320px) and (max-width : 420px) { @content; }
+  }
+  @mixin mobile {
+    @media only screen and (min-width : 420px) and (max-width : 595px) { @content; }
+  }
+  @mixin sm-tablet {
+    @media only screen and (min-width : 595px) and (max-width : 690px) { @content; }
+  }
+  @mixin tablet {
+    @media only screen and (min-width : 690px) and (max-width : 768px) { @content; }
+  }
+  @mixin mobile-tablet {
+    @media only screen and (min-width : 320px) and (max-width : 1200px) { @content; }
+  }
+  @mixin sm-desktop {
+    @media only screen and (min-width : 768px) and (max-width : 1024px) { @content; }
+  }
+  @mixin desktrop {
+    @media only screen and (min-width : 1024px) and (max-width : 1224px) { @content; }
+  }
+
+
+//   @media only screen and (min-width : 320px) and (max-width : 480px) {/*--- Mobile portrait ---*/}
+// @media only screen and (min-width : 480px) and (max-width : 595px) {/*--- Mobile landscape ---*/}
+// @media only screen and (min-width : 595px) and (max-width : 690px) {/*--- Small tablet portrait ---*/}
+// @media only screen and (min-width : 690px) and (max-width : 800px) {/*--- Tablet portrait ---*/}
+// @media only screen and (min-width : 800px) and (max-width : 1024px) {/*--- Small tablet landscape ---*/}
+// @media only screen and (min-width : 1024px) and (max-width : 1224px) {/*--- Tablet landscape --- */}

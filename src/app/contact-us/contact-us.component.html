@@ -1,0 +1,163 @@
+<div class="space-medium">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="feature-description">
+          <h2>We’re ready to listen to your needs &
+            would like to talk about how we can help you.</h2>
+          <hr>
+          <!-- feature-left -->
+          <div class="feature-left">
+            <div class="feature-icon"><i class="far fa-address-book"></i></div>
+            <div class="feature-content">
+              <p>Fill the form on right side and describe type of required cleaning. </p>
+            </div>
+          </div>
+          <!-- /.feature-left -->
+          <!-- feature-left -->
+          <div class="feature-left">
+            <div class="feature-icon"><i class="far fa-compass"></i></div>
+            <div class="feature-content">
+              <p>After receiving and reviewing your application, we will contact you and present you with a free
+                quote.</p>
+            </div>
+          </div>
+          <!-- /.feature-left -->
+          <!-- feature-left -->
+          <div class="feature-left">
+            <div class="feature-icon"><i class="far fa-question-circle"></i></div>
+            <div class="feature-content">
+              <p>If you don't like our form you can always <a href="tel:07807 723856" class="">phone</a> us or write a
+                message on
+                our <a href="https://www.facebook.com/southbeesservices/" class="">Facebook</a>.</p>
+            </div>
+          </div>
+          <!-- /.feature-left -->
+          <hr>
+          <p>You can use our form to contact with us in any other cases as well.</p>
+        </div>
+      </div>
+      <!-- /.feature-sections -->
+      <div class="offset-xl-1 col-xl-6 offset-lg-1 col-lg-10 offset-md-1 col-md-10 col-sm-12 col-12 mt30">
+        <form name="contactForm" #contact="ngForm" (ngSubmit)="contact.form.valid  && sendForm();" novalidate>
+          <!-- service-form -->
+          <div class="service-form">
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb10 ">
+                <h3>Get Affordable & Best Cleaning Services with Bee Free</h3>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                <div class="form-group service-form-group">
+                  <label class="control-label sr-only" for="name">Name</label>
+                  <input type="text"
+                         id="name"
+                         class="form-control"
+                         name="name"
+                         placeholder="Type your name here"
+                         [(ngModel)]="contactForm.name"
+                         #name="ngModel"
+                         [ngClass]="{ 'is-invalid': contact.submitted && name.invalid}"
+                         required="required"/>
+                  <div class="form-icon"><i class="fa fa-user"></i></div>
+                  <!--input validation group-->
+                  <div *ngIf="contact.submitted && name.invalid">
+                    <!--input validation errors-->
+                    <div class="invalid-input" *ngIf="name.errors">Name is not valid</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                <div class="form-group service-form-group">
+                  <label class="control-label sr-only" for="email">Email</label>
+                  <input type="email"
+                         id="email"
+                         class="form-control"
+                         name="email"
+                         placeholder="Type your e-mail address here"
+                         [(ngModel)]="contactForm.email"
+                         #email="ngModel"
+                         [ngClass]="{ 'is-invalid': contact.submitted && !email.valid}"
+                         required email/>
+                  <div class="form-icon"><i class="fas fa-envelope"></i></div>
+                  <div *ngIf="contact.submitted && !email.valid">
+                    <!--input validation errors-->
+                    <div class="invalid-input" *ngIf="email.errors.required">Email is required</div>
+                    <div class="invalid-input" *ngIf="email.errors.email">Email is not valid</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                <div class="form-group service-form-group">
+                  <label class="control-label sr-only" for="telephoneNumber">Telephone number</label>
+                  <input type="number"
+                         id="telephoneNumber"
+                         class="form-control"
+                         name="telephoneNumber"
+                         placeholder="Type your telephone number here"
+                         [(ngModel)]="contactForm.telephoneNumber"
+                         #telephoneNumber="ngModel"
+                         [ngClass]="{ 'is-invalid': contact.submitted && !telephoneNumber.valid}"
+                         required/>
+                  <div class="form-icon"><i class="fa fa-phone"></i></div>
+                  <div *ngIf="contact.submitted && !telephoneNumber.valid">
+                    <!--input validation errors-->
+                    <div class="invalid-input" *ngIf="telephoneNumber.errors.required">Telephone number is required
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                <div class="form-group service-form-group">
+                  <label class="control-label sr-only" for="postCode">Postcode</label>
+                  <input type="text"
+                         id="postCode"
+                         class="form-control"
+                         name="postCode"
+                         placeholder="Type your postcode here"
+                         [(ngModel)]="contactForm.postCode"
+                         #postCode="ngModel"
+                         [ngClass]="{ 'is-invalid': contact.submitted && !postCode.valid }"
+                         required/>
+                  <div class="form-icon"><i class="fas fa-mail-bulk"></i></div>
+                  <div *ngIf="contact.submitted && !postCode.valid">
+                    <!--input validation errors-->
+                    <div class="invalid-input" *ngIf="postCode.errors.required">Postcode is required</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                <div class="form-group">
+                  <label class="control-label sr-only" for="query"></label>
+                  <textarea class="form-control"
+                            id="query"
+                            name="query"
+                            rows="3"
+                            placeholder="Messages"
+                            [(ngModel)]="contactForm.query"
+                            #query="ngModel"
+                            required></textarea>
+                  <div *ngIf="contact.submitted && !telephoneNumber.valid">
+                    <div class="invalid-input" *ngIf="query.errors.required">Please type your query here
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                <button *ngIf="recaptchaChecker" type="submit" name="singlebutton"
+                        class="btn btn-default btn-block mb10"><i class="fa fa-envelope-o"></i>
+                  <span>Contact us</span></button>
+                <hr>
+                <re-captcha (resolved)="resolved($event)"
+                            siteKey="6LcLFcMUAAAAAEnU_SXTxzQEEHNVPCiFgENCzzKV"></re-captcha>
+                <p>
+                  <small>We promise we will never SPAM you with unwanted emails.</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </form>
+        <!-- /.service-form -->
+      </div>
+    </div>
+  </div>
+</div>

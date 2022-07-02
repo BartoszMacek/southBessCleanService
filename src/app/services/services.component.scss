@@ -1,0 +1,244 @@
+@import "src/styles";
+
+.services {
+  background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url(../../assets/images/other_bg.png) no-repeat center;
+  background-size: cover;
+  margin: 0;
+  border-bottom: none;
+  padding-bottom: 35px;
+}
+
+.box{
+  height: 500px;
+  margin-top: 4rem;
+}
+
+.page-caption {
+  margin-top: 8rem;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.border-caption {
+  border: 5px solid $beige;
+  background: rgba(0, 0, 0, 0.0);
+  width: 80%;
+  padding-top: 8px;
+}
+
+
+.page-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+ul li {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.text-light{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-divider {
+  border-radius: 30px;
+  background: #C64545;
+  padding: 2em 0 4em;
+  position: relative;
+}
+
+.blue .pricing-divider {
+  background: #2D5772;
+}
+
+.green .pricing-divider {
+  background: #1AA85C;
+}
+
+.red b {
+  color: #C64545
+}
+
+.blue b {
+  color: #2D5772
+}
+
+.green b {
+  color: #1AA85C
+}
+
+.pricing-divider-img {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.deco-layer {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.btn-custom {
+  background: #C64545;
+  color: #fff;
+  border-radius: 20px
+}
+
+.img-float {
+  width: 50px;
+  position: absolute;
+  top: -3.5rem;
+  right: 1rem
+}
+
+.princing-item {
+  transition: all 150ms ease-out;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.princing-item:hover {
+  transform: scale(1.05);
+}
+
+.princing-item:hover .deco-layer--1 {
+  -webkit-transform: translate3d(15px, 0, 0);
+  transform: translate3d(15px, 0, 0);
+}
+
+.princing-item:hover .deco-layer--2 {
+  -webkit-transform: translate3d(-15px, 0, 0);
+  transform: translate3d(-15px, 0, 0);
+}
+
+.btn {
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: none;
+  -moz-user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 3px solid;
+  padding: 8px 15px;
+}
+
+.btn-outlined {
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-outlined.btn-blue {
+  background: none;
+  color: #2D5772;
+  border-color: #2D5772;
+}
+
+.btn-outlined.btn-blue:hover,
+.btn-outlined.btn-blue:active {
+  color: #FFF;
+  background: #2D5772;
+  border-color: #2D5772;
+}
+
+.btn-outlined.btn-red {
+  background: none;
+  color: #C64545;
+  border-color: #C64545;
+}
+
+.btn-outlined.btn-red:hover,
+.btn-outlined.btn-red:active {
+  color: #FFF;
+  background: #C64545;
+  border-color: #C64545;
+}
+
+.btn-outlined.btn-green {
+  background: none;
+  color: #1AA85C;
+  border-color: #1AA85C;
+}
+
+.btn-outlined.btn-green:hover,
+.btn-outlined.btn-green:active {
+  color: #FFF;
+  background: #1AA85C;
+  border-color: #1AA85C;
+}
+
+.mb-6 {
+  margin-bottom: 6.7rem;
+}
+
+.mb-r {
+  margin-bottom: 4.3rem;
+}
+
+.shadow-effect {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.60),0 2px 10px 0 rgba(0,0,0,.60)!important;
+
+}
+
+.card{
+  background-color: transparent;
+  border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    overflow: visible;
+    border: 0;
+    box-shadow: none;
+}
+
+.card-body {
+  font-size: 16px;
+    font-weight: 300;
+    line-height: 1.7;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    -webkit-border-radius: 0!important;
+    border-radius: 0!important;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    text-align: justify;
+    text-justify: inter-word !important;
+}
+
+.iconbar{
+  background-color: $blue;
+  color: white;
+  margin-right: 1rem;
+  padding: 1.5rem;
+}
+
+.bar{
+  background-color: $beige;
+  color: black;
+}

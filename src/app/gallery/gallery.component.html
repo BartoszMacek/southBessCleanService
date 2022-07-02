@@ -1,0 +1,31 @@
+<section class="gallery">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 mb-2">
+        <button class="btn btn-outlined btn-theme btn-lg mr-2" [class.active]="filterBy=='all'"
+                (click)="filterBy='all'">All
+        </button>
+        <button class="btn btn-outlined btn-theme btn-lg mr-2" [class.active]="filterBy=='kitchen'"
+                (click)="filterBy='kitchen'">Kitchen
+        </button>
+        <button class="btn btn-outlined btn-theme btn-lg mr-2" [class.active]="filterBy=='bathroom'"
+                (click)="filterBy='bathroom'">Bathroom
+        </button>
+        <button class="btn btn-outlined btn-theme btn-lg mr-2 small-mt-1" [class.active]="filterBy=='living-room'"
+                (click)="filterBy='living-room'">Living
+          room
+        </button>
+        <button class="btn btn-outlined btn-theme btn-lg mr-2 small-mt-1" [class.active]="filterBy=='car'"
+                (click)="filterBy='car'">Car
+        </button>
+      </div>
+    </div>
+    <div class="row text-center text-lg-left gallery__list">
+          <div class="col-lg-3 col-md-4 col-6" *ngFor="let image of visibleImages | imageFilterByCat:filterBy">
+            <a class="d-block mb-4 h-100" href="{{image.url}}" data-caption="South Cleaning Services Bee Free">
+              <img src="{{image.url}}" class="img-fluid img-thumbnail zoom" alt="First image">
+            </a>
+          </div>
+        </div>
+      </div>
+</section>

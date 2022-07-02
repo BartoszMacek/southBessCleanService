@@ -1,0 +1,52 @@
+@import "src/styles";
+
+.navbar {
+  -webkit-transition: padding 0.2s ease;
+  -moz-transition: padding 0.2s ease;
+  -o-transition: padding 0.2s ease;
+  transition: padding 0.2s ease;
+  background: rgba(0,0,0,0.45);
+  @include mobile-tablet {
+    background: rgba(0,0,0,0.9);
+  }
+}
+
+.affix {
+  padding-top: 0.2em !important;
+  padding-bottom: 0.2em !important;
+  -webkit-transition: padding 0.2s linear;
+  -moz-transition: padding 0.2s linear;
+  -o-transition: padding 0.2s linear;
+  transition: padding 0.2s linear;
+}
+
+.brand {
+  max-height: 50px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+
+  img {
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+.nav-item{
+  font-size: 16px;
+}
+
+.navbar-brand{
+  @include sm-mobile{
+  font-size: 12px
+  }
+  @include mobile{
+    font-size: 16px
+  }
+  @include sm-tablet{
+    font-size: 16px
+  }
+  @include tablet{
+    font-size: 16px
+  }
+}
